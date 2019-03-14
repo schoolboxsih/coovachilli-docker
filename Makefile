@@ -20,8 +20,8 @@ run:
 	sudo docker run -t \
     --name $(IMGNAME)_run \
 	--net $(NETWORK) \
-	--ipc $(NETWORK) \
 	--pid $(NETWORK) \
+	--ipc $(NETWORK) \
 	--privileged \
 	$(IMGNAME):$(IMGTAG)
 
